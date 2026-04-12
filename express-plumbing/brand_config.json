@@ -1,11 +1,11 @@
 {
   "client_name": "Express Plumbing",
   "design_tokens": {
-    "primary": "#fbbf24",
-    "secondary": "#111827",
-    "accent": "#f59e0b",
-    "text": "#f9fafb",
-    "bg": "#0f172a"
+    "primary": "#dc2626",
+    "secondary": "#f8fafc",
+    "accent": "#ef4444",
+    "text": "#0f172a",
+    "bg": "#ffffff"
   },
-  "generation_date": "2026-04-12T19:34:41.338199"
+  "generation_date": "2026-04-12T19:38:45.535269"
 }
