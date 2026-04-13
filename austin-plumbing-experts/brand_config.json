@@ -1,11 +1,11 @@
 {
   "client_name": "Austin Plumbing Experts",
   "design_tokens": {
-    "primary": "#fbbf24",
-    "secondary": "#111827",
-    "accent": "#f59e0b",
-    "text": "#f9fafb",
-    "bg": "#0f172a"
+    "primary": "#dc2626",
+    "secondary": "#f8fafc",
+    "accent": "#ef4444",
+    "text": "#0f172a",
+    "bg": "#ffffff"
   },
-  "generation_date": "2026-04-12T22:09:58.194217"
+  "generation_date": "2026-04-12T22:37:17.985367"
 }
