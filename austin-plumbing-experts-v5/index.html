@@ -14,83 +14,46 @@
                     "colors": {
                         "primary": "#991b1b",
                         "on-primary": "#ffffff",
-                        "primary-container": "#fee2e2",
-                        "on-primary-container": "#450a0a",
-                        "secondary": "#334155",
-                        "on-secondary": "#ffffff",
-                        "secondary-container": "#f1f5f9",
-                        "on-secondary-container": "#1e293b",
-                        "tertiary": "#991b1b",
-                        "on-tertiary": "#ffffff",
                         "background": "#f8fafc",
                         "on-background": "#0f172a",
+                        "secondary": "#1e293b",
+                        "on-secondary": "#ffffff",
                         "surface": "#ffffff",
-                        "on-surface": "#0f172a",
-                        "surface-variant": "#e2e8f0",
-                        "on-surface-variant": "#475569",
-                        "outline": "#94a3b8",
-                        "outline-variant": "#cbd5e1",
-                        "surface-container-low": "#f1f5f9",
-                        "surface-container": "#e2e8f0",
-                        "surface-container-high": "#cbd5e1",
-                        "surface-container-highest": "#94a3b8",
-                        "surface-container-lowest": "#ffffff",
-                        "error": "#ba1a1a",
-                        "on-error": "#ffffff"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
+                        "on-surface": "#0f172a"
                     },
                     "fontFamily": {
                         "headline": ["Manrope"],
-                        "body": ["Inter"],
-                        "label": ["Inter"]
+                        "body": ["Inter"]
                     }
                 },
             },
         }
     </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-    </style>
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-primary/20 selection:text-primary">
-<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/30">
+<body class="bg-background text-on-surface font-body">
+<nav class="fixed top-0 w-full z-50 bg-white border-b border-slate-200">
 <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="text-2xl font-extrabold text-[#334155] tracking-tighter font-headline">Austin Plumbing Experts</div>
-<div class="hidden md:flex items-center space-x-8 font-headline font-bold">
-<a class="text-primary border-b-2 border-primary" href="#home">Home</a>
-<a class="text-[#475569]" href="#services">Services</a>
-<a class="text-[#475569]" href="#about">About</a>
-<a class="text-[#475569]" href="#contact">Contact</a>
-</div>
-<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold text-sm" href="tel:(512) 938-5056">(512) 938-5056</a>
+<div class="text-2xl font-extrabold text-[#1e293b] tracking-tighter">Austin Plumbing Experts</div>
+<a class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold shadow-lg shadow-red-900/10" href="tel:(512) 938-5056">(512) 938-5056</a>
 </div>
 </nav>
-<section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden" id="home">
-<div class="max-w-7xl mx-auto px-8 relative z-10">
-<div class="grid md:grid-cols-2 gap-12 items-center">
+<section class="relative pt-48 pb-32 px-8" id="home">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
 <div class="space-y-8">
-<div class="inline-flex items-center px-4 py-2 rounded-full bg-secondary-container text-secondary font-bold text-sm">
-<span class="material-symbols-outlined mr-2 text-lg">verified</span>
-                    Available in Austin, TX
-                </div>
-<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-secondary tracking-tighter">Austin Plumbing Experts</h1>
-<p class="text-xl md:text-2xl text-on-surface-variant max-w-lg leading-relaxed">Austin's Reliable 24/7 Plumbing Experts.</p>
-<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold shadow-lg">Schedule Service</button>
+<h1 class="text-7xl font-black text-[#1e293b] leading-none tracking-tighter">Austin Plumbing Experts</h1>
+<p class="text-2xl text-slate-600 leading-relaxed max-w-lg">Austin's Reliable 24/7 Plumbing Experts.</p>
+<button class="bg-primary text-white px-10 py-5 rounded-2xl font-black shadow-xl">Secure Professional Service</button>
 </div>
+<div class="aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp2mMQvbp_2fXXmGu2Hb-RqFfAJFkUN67DOiIJ7sySqTYd_WJkhbjEiIRZn6G9_kt43k4EUFMugGxKI1xFipOigIYmcCCUmfn-WZpfLNhV4rld10y12d4Bq8ugOp2IPRICJcWyrKs1HLngaN0vXLlwI4nxOuFB0o-_9tciHc_JLwcBoMjOdW4wjmeeK_twr2i4x2ng25vAHSUhmI1AMdCHR5k0a1bClEKq4tYCEkYymnYCXfKpDeob9FknxPvzwf_GzB6W0GhlfVxK"/>
 </div>
 </div>
 </section>
-<footer class="w-full bg-secondary text-white py-16">
-<div class="max-w-7xl mx-auto px-12 flex flex-col md:flex-row justify-between items-center">
-<div class="font-headline font-black text-xl text-primary">Austin Plumbing Experts</div>
-<p class="text-sm opacity-60">© 2024 Austin Plumbing Experts. All rights reserved.</p>
+<footer class="bg-slate-900 text-white py-24 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-16">
+<div class="text-4xl font-black text-primary">Austin Plumbing Experts</div>
+<p class="text-lg opacity-60">Architectural Plumbing Excellence for Austin, TX</p>
+<a class="bg-primary text-white px-10 py-5 rounded-2xl font-black shadow-lg" href="tel:(512) 938-5056">(512) 938-5056</a>
 </div>
 </footer>
 </body></html>
