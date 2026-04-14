@@ -12,53 +12,27 @@
             theme: {
                 extend: {
                     "colors": {
-                        "on-secondary-container": "#653900",
-                        "on-secondary": "#ffffff",
-                        "surface-container-lowest": "#ffffff",
-                        "error": "#ba1a1a",
-                        "primary-fixed-dim": "#a9c7ff",
-                        "on-tertiary-container": "#edb41e",
-                        "on-error-container": "#93000a",
-                        "on-surface-variant": "#434652",
-                        "on-secondary-fixed": "#2c1600",
-                        "background": "#0a0a0a",
-                        "surface-tint": "#005db7",
+                        "primary": "#005db7",
+                        "on-primary": "#ffffff",
                         "primary-container": "#004b95",
-                        "on-background": "#071e27",
-                        "surface": "#0a0a0a",
-                        "on-tertiary-fixed": "#261a00",
-                        "tertiary-container": "#624800",
-                        "on-tertiary-fixed-variant": "#5c4300",
-                        "tertiary-fixed-dim": "#f8bd2a",
-                        "on-secondary-fixed-variant": "#693c00",
-                        "tertiary": "#463200",
-                        "primary": "#D4AF37",
-                        "on-tertiary": "#ffffff",
-                        "error-container": "#ffdad6",
-                        "outline-variant": "#c3c6d4",
-                        "tertiary-fixed": "#ffdfa0",
-                        "secondary-fixed": "#ffdcbe",
-                        "surface-container-highest": "#cfe6f2",
-                        "inverse-on-surface": "#dff4ff",
-                        "surface-dim": "#c7dde9",
-                        "secondary-fixed-dim": "#ffb870",
-                        "inverse-primary": "#a9c7ff",
-                        "surface-container-low": "#e6f6ff",
-                        "secondary": "#8b5000",
-                        "surface-container-high": "#d5ecf8",
-                        "surface-container": "#dbf1fe",
-                        "inverse-surface": "#1e333c",
-                        "surface-variant": "#cfe6f2",
-                        "surface-bright": "#f3faff",
-                        "secondary-container": "#ff9800",
-                        "on-primary-fixed": "#001b3d",
                         "on-primary-container": "#98bdff",
-                        "on-error": "#ffffff",
-                        "outline": "#737783",
-                        "on-primary-fixed-variant": "#00468c",
-                        "primary-fixed": "#d6e3ff",
+                        "secondary": "#8b5000",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#ff9800",
+                        "on-secondary-container": "#653900",
+                        "background": "#f3faff",
+                        "on-background": "#071e27",
+                        "surface": "#f3faff",
                         "on-surface": "#071e27",
-                        "on-primary": "#ffffff"
+                        "surface-variant": "#cfe6f2",
+                        "on-surface-variant": "#434652",
+                        "outline": "#737783",
+                        "outline-variant": "#c3c6d4",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#e6f6ff",
+                        "surface-container": "#dbf1fe",
+                        "surface-container-high": "#d5ecf8",
+                        "surface-container-highest": "#cfe6f2"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.125rem",
@@ -79,59 +53,42 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .glass-nav {
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
     </style>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#f3faff]/80 dark:bg-[#071e27]/80 backdrop-blur-md shadow-xl shadow-[#071e27]/5">
+<nav class="fixed top-0 w-full z-50 bg-[#f3faff]/80 backdrop-blur-md shadow-xl">
 <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="text-2xl font-extrabold text-[#00346c] tracking-tighter font-['Manrope']" style="color: #D4AF37">
-                Express Plumbing
-            </div>
+<div class="text-2xl font-extrabold text-[#00346c] tracking-tighter font-['Manrope']">Express Plumbing</div>
 <div class="hidden md:flex items-center space-x-8 font-['Manrope'] font-bold tracking-tight">
-<a class="text-[#00346c] border-b-2 border-[#00346c] pb-1 hover:text-[#8b5000] transition-colors duration-300" style="color: #D4AF37; border-color: #D4AF37" href="#home">Home</a>
-<a class="text-[#071e27]/70 hover:text-[#8b5000] transition-colors duration-300" href="#services">Services</a>
-<a class="text-[#071e27]/70 hover:text-[#8b5000] transition-colors duration-300" href="#about">About</a>
-<a class="text-[#071e27]/70 hover:text-[#8b5000] transition-colors duration-300" href="#contact">Contact</a>
+<a class="text-[#00346c] border-b-2 border-[#00346c] pb-1" href="#home">Home</a>
+<a class="text-[#071e27]/70" href="#services">Services</a>
+<a class="text-[#071e27]/70" href="#about">About</a>
+<a class="text-[#071e27]/70" href="#contact">Contact</a>
 </div>
 <div class="flex items-center gap-4">
-<button class="bg-secondary-container text-on-secondary-container px-6 py-2.5 rounded-full font-bold text-sm tracking-wide active:scale-95 transition-all shadow-sm">
-                    Emergency Call
-                </button>
+<a class="bg-secondary-container text-on-secondary-container px-6 py-2.5 rounded-full font-bold text-sm" href="tel:(737) 345-9535">(737) 345-9535</a>
 </div>
 </div>
 </nav>
-<!-- Hero Section -->
+<!-- Hero -->
 <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden" id="home">
 <div class="max-w-7xl mx-auto px-8 relative z-10">
 <div class="grid md:grid-cols-2 gap-12 items-center">
 <div class="space-y-8">
 <div class="inline-flex items-center px-4 py-2 rounded-full bg-surface-container text-primary font-bold text-sm">
 <span class="material-symbols-outlined mr-2 text-lg">verified</span>
-                        Available in Austin, TX
-                    </div>
-<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary leading-tight tracking-tighter">
-                        Express Plumbing
-                    </h1>
-<p class="text-xl md:text-2xl text-on-surface-variant max-w-lg leading-relaxed">
-                        Austin's Trusted 24/7 Plumbing Emergency Service
-                    </p>
+                    Available in Austin, TX
+                </div>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary leading-tight tracking-tighter">Express Plumbing</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-lg leading-relaxed">Austin's Trusted 24/7 Plumbing Emergency Service</p>
 <div class="flex flex-wrap gap-4">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-primary/20 transition-all active:scale-95">
-                            Schedule Service
-                        </button>
-<button class="bg-surface-container-high text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-highest transition-all">
-                            View Services
-                        </button>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-lg">Schedule Service</button>
 </div>
 </div>
 <div class="relative">
 <div class="aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
-<img class="w-full h-full object-cover" data-alt="industrial plumbing facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp2mMQvbp_2fXXmGu2Hb-RqFfAJFkUN67DOiIJ7sySqTYd_WJkhbjEiIRZn6G9_kt43k4EUFMugGxKI1xFipOigIYmcCCUmfn-WZpfLNhV4rld10y12d4Bq8ugOp2IPRICJcWyrKs1HLngaN0vXLlwI4nxOuFB0o-_9tciHc_JLwcBoMjOdW4wjmeeK_twr2i4x2ng25vAHSUhmI1AMdCHR5k0a1bClEKq4tYCEkYymnYCXfKpDeob9FknxPvzwf_GzB6W0GhlfVxK"/>
+<img class="w-full h-full object-cover" data-alt="industrial plumbing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp2mMQvbp_2fXXmGu2Hb-RqFfAJFkUN67DOiIJ7sySqTYd_WJkhbjEiIRZn6G9_kt43k4EUFMugGxKI1xFipOigIYmcCCUmfn-WZpfLNhV4rld10y12d4Bq8ugOp2IPRICJcWyrKs1HLngaN0vXLlwI4nxOuFB0o-_9tciHc_JLwcBoMjOdW4wjmeeK_twr2i4x2ng25vAHSUhmI1AMdCHR5k0a1bClEKq4tYCEkYymnYCXfKpDeob9FknxPvzwf_GzB6W0GhlfVxK"/>
 </div>
 <div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-2xl shadow-xl border border-outline-variant/15 max-w-[240px]">
 <p class="text-secondary font-bold text-sm mb-2">MASTER PLUMBER</p>
@@ -142,7 +99,7 @@
 </div>
 </div>
 </section>
-<!-- Service Catalog -->
+<!-- Technical Disciplines -->
 <section class="py-24 bg-surface-container-low" id="services">
 <div class="max-w-7xl mx-auto px-8">
 <div class="mb-16">
@@ -150,21 +107,13 @@
 <div class="h-1.5 w-24 bg-secondary rounded-full"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-full shadow-sm hover:shadow-md transition-shadow">
-<div class="flex items-start gap-6">
-<div class="w-16 h-16 rounded-xl bg-primary/5 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-4xl">water</span>
-</div>
-<div>
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-full shadow-sm">
 <h3 class="text-2xl font-headline font-extrabold text-primary mb-2">Water Integration</h3>
-<p class="text-on-surface-variant leading-relaxed">Advanced filtration and infrastructure longevity solutions.</p>
-</div>
-</div>
+<p class="text-on-surface-variant leading-relaxed">24/7 reliable plumbing solutions for Austin's biggest emergencies.</p>
 </div>
 <div class="bg-primary text-on-primary p-8 rounded-full shadow-lg">
-<span class="material-symbols-outlined text-4xl mb-4 text-primary-container">waves</span>
 <h3 class="text-2xl font-headline font-extrabold mb-2">Rapid Response</h3>
-<p class="opacity-90">High-pressure diagnostics and precision imaging.</p>
+<p class="opacity-90">Express Plumbing provides dependable, 24/7 plumbing services right here in Austin. From minor drain clogs to major pipe bursts and water heater replacements, our skilled technicians arrive quickly to restore your home's function. We are committed to professionalism, efficiency, and guaranteed clean-up.</p>
 </div>
 </div>
 </div>
@@ -172,44 +121,16 @@
 <!-- About -->
 <section class="py-24" id="about">
 <div class="max-w-7xl mx-auto px-8">
-<div class="grid md:grid-cols-2 gap-20 items-center">
-<div>
 <h2 class="text-4xl font-headline font-extrabold text-primary mb-6">About Our Practice</h2>
-<p class="text-lg text-on-surface-variant leading-relaxed">
-                                Express Plumbing provides dependable, 24/7 plumbing services right here in Austin. From minor drain clogs to major pipe bursts and water heater replacements, our skilled technicians arrive quickly to restore your home's function. We are committed to professionalism, efficiency, and guaranteed clean-up.
-                            </p>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div class="bg-secondary p-8 rounded-xl text-on-secondary">
-<div class="text-4xl font-extrabold mb-1">20+</div>
-<div class="text-sm uppercase tracking-widest font-bold opacity-80">Years Experience</div>
-</div>
-</div>
-</div>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-3xl">Express Plumbing provides dependable, 24/7 plumbing services right here in Austin. From minor drain clogs to major pipe bursts and water heater replacements, our skilled technicians arrive quickly to restore your home's function. We are committed to professionalism, efficiency, and guaranteed clean-up.</p>
 </div>
 </section>
 <!-- Contact -->
 <section class="py-24" id="contact">
-<div class="max-w-7xl mx-auto px-8">
-<div class="grid md:grid-cols-2 gap-16 items-start">
-<div>
+<div class="max-w-7xl mx-auto px-8 text-center md:text-left">
 <h2 class="text-5xl font-headline font-extrabold text-primary mb-8 tracking-tighter">Secure Your Flow.</h2>
-<p class="text-xl text-on-surface-variant mb-12 leading-relaxed">
-                        Located in Austin, TX. Request a technical dispatch 24/7.
-                    </p>
-<div class="flex items-center gap-4 text-on-surface-variant">
-<span class="material-symbols-outlined text-primary">phone</span>
-<span>(737) 345-9535</span>
-</div>
-</div>
-<div class="bg-surface-container-low p-10 rounded-[2.5rem]">
-<form class="space-y-6">
-<button class="w-full bg-primary text-on-primary font-bold py-4 rounded-xl shadow-lg hover:shadow-primary/20 transition-all">
-                            (737) 345-9535 - CALL NOW
-                        </button>
-</form>
-</div>
-</div>
+<p class="text-xl text-on-surface-variant mb-12">Austin, TX</p>
+<a class="bg-primary text-on-primary font-bold py-4 px-12 rounded-xl shadow-lg" href="tel:(737) 345-9535">(737) 345-9535 - CALL NOW</a>
 </div>
 </section>
 <footer class="w-full rounded-t-3xl mt-20 bg-[#dbf1fe]">
