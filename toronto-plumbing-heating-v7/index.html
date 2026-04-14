@@ -1,16 +1,36 @@
 <!DOCTYPE html>
+
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Toronto Plumbing & Heating | Excellence Redefined.</title>
+<title>Toronto Plumbing & Heating | Industrial Plumbing Authority</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <style>
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        body { background-color: #131313; color: #e5e2e1; font-family: 'Work Sans', sans-serif; }
-        .industrial-grid { background-size: 40px 40px; background-image: radial-gradient(circle, #353535 1px, transparent 1px); }
-        .hero-image-mask { mask-image: linear-gradient(to right, transparent, black 40%); }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.6;
+        }
+        .industrial-grid {
+            background-size: 40px 40px;
+            background-image: radial-gradient(circle, #252525 1px, transparent 1px);
+        }
+        .hero-image-mask {
+            mask-image: linear-gradient(to right, transparent, black 40%);
+        }
+        .font-headline {
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: -0.02em;
+        }
+        h1, h2, h3, h4 {
+            line-height: 1.1;
+        }
     </style>
 <script id="tailwind-config">
         tailwind.config = {
@@ -66,57 +86,340 @@
                       "on-tertiary-fixed-variant": "#004c68",
                       "secondary-fixed-dim": "#c6c6c7"
               },
-              "borderRadius": { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
-              "fontFamily": { "headline": ["Space Grotesk"], "body": ["Work Sans"] }
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "0px",
+                      "xl": "0px",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Space Grotesk"],
+                      "body": ["Work Sans"],
+                      "label": ["Work Sans"]
+              }
             },
           },
         }
       </script>
 </head>
-<body class="selection:bg-primary-container selection:text-on-primary-fixed">
-<nav class="fixed top-0 w-full z-50 bg-[#131313]/90 backdrop-blur-md border-b-2 border-[#353535]">
-<div class="flex justify-between items-center w-full px-6 py-4 max-w-full">
-<div class="text-2xl font-black tracking-tighter text-[#ff9800] font-headline uppercase">Toronto Plumbing & Heating</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-headline font-bold uppercase tracking-tighter text-[#ff9800] border-b-4 border-[#ff9800] pb-1" href="#hero">Nav</a>
-<a class="font-headline font-bold uppercase tracking-tighter text-white/90" href="#services">Services</a>
-<a class="font-headline font-bold uppercase tracking-tighter text-white/90" href="#emergency">Emergency</a>
-<a class="font-headline font-bold uppercase tracking-tighter text-white/90" href="#process">Process</a>
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/95 backdrop-blur-md border-b border-surface-container-highest">
+<div class="flex justify-between items-center w-full px-8 py-5 max-w-full">
+<div class="flex items-center gap-2 group cursor-pointer">
+<div class="w-8 h-8 bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-fixed text-xl" data-icon="architecture">architecture</span>
 </div>
-<button class="bg-primary-container text-on-primary-fixed px-6 py-2 font-headline font-extrabold uppercase tracking-tighter">REQUEST DISPATCH</button>
+<div class="text-xl font-bold tracking-tight text-white font-headline uppercase">
+        Toronto Plumbing & Heating
+</div>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-headline font-semibold text-xs uppercase tracking-widest text-primary-container" href="#hero">Overview</a>
+<a class="font-headline font-semibold text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#services">Services</a>
+<a class="font-headline font-semibold text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#emergency">Emergency</a>
+<a class="font-headline font-semibold text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#process">Process</a>
+<a class="font-headline font-semibold text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+<a href="tel:Call Now" class="bg-primary-container text-on-primary-fixed px-6 py-2.5 text-xs font-headline font-bold uppercase tracking-widest hover:bg-primary transition-all active:scale-95">
+    Direct Dispatch: Call Now
+</a>
 </div>
 </nav>
 <main>
+<!-- Hero Section -->
 <section class="relative min-h-screen flex flex-col justify-center items-start px-8 md:px-24 pt-20 industrial-grid overflow-hidden" id="hero">
-<div class="absolute inset-0 z-0"><img class="w-full h-full object-cover opacity-20 hero-image-mask grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1RZYPRrKGevsCEK_BjGv0VkGOhIjtVz_BIDSgn8uWzQLO9iaWtv4O6z6ClDWZRLSH-YOmf9YDAMTxHxDv4LRIy46JvMM0ySgKPIGaJv5EN_d4Q-73lHdS_sqr5G7c-doFaTpnoEoMxcIU91R8wOec3Tu0YcGwSopfQf_G4EkUbvPlYXM78uBdPk1bqJ6lSL6-SjMoY1HuAuB8uqhzI0uPPkfVBOob4wumJCWV4BZDretnG88Nh3c0S79zhrJyQfwg64a-JtrTmf1d"/></div>
+<div class="absolute inset-0 z-0">
+<img alt="Industrial pipes" class="w-full h-full object-cover opacity-10 hero-image-mask grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1RZYPRrKGevsCEK_BjGv0VkGOhIjtVz_BIDSgn8uWzQLO9iaWtv4O6z6ClDWZRLSH-YOmf9YDAMTxHxDv4LRIy46JvMM0ySgKPIGaJv5EN_d4Q-73lHdS_sqr5G7c-doFaTpnoEoMxcIU91R8wOec3Tu0YcGwSopfQf_G4EkUbvPlYXM78uBdPk1bqJ6lSL6-SjMoY1HuAuB8uqhzI0uPPkfVBOob4wumJCWV4BZDretnG88Nh3c0S79zhrJyQfwg64a-JtrTmf1d"/>
+</div>
 <div class="z-10 max-w-5xl">
-<div class="inline-block bg-primary-container text-on-primary-fixed px-3 py-1 text-sm font-bold uppercase tracking-widest mb-6">Serving toronto canada 24/7</div>
-<h1 class="text-6xl md:text-9xl font-black font-headline leading-none tracking-tighter uppercase mb-8"><span class="text-on-surface">Built for</span><br/><span class="text-primary-container">toronto canada</span></h1>
-<p class="text-xl md:text-3xl font-light text-on-surface-variant max-w-2xl leading-relaxed mb-12">Excellence Redefined. Toronto Plumbing & Heating provides industrial-grade plumbing solutions for the most demanding infrastructures.</p>
-<div class="flex flex-col md:flex-row gap-4">
-<a class="bg-primary-container text-on-primary-fixed px-10 py-5 text-xl font-black uppercase tracking-tighter hover:bg-primary transition-all flex items-center justify-center gap-3" href="#emergency"><span class="material-symbols-outlined">bolt</span>Immediate Response</a>
-<a class="border-4 border-outline/20 text-on-surface px-10 py-5 text-xl font-black uppercase tracking-tighter hover:border-primary transition-all flex items-center justify-center" href="#services">Technical Specs</a>
+<div class="inline-flex items-center gap-3 bg-white/5 border border-white/10 text-primary-container px-4 py-1.5 text-xs font-bold uppercase tracking-widest mb-8">
+<span class="w-2 h-2 bg-primary-container rounded-full animate-pulse"></span>
+    Industrial Infrastructure Experts | toronto canada
+</div>
+<h1 class="text-7xl md:text-[8rem] font-bold font-headline leading-[0.9] tracking-tighter uppercase mb-8">
+<span class="text-on-surface block mb-2 opacity-90">Precision</span>
+<span class="text-primary-container block font-black">Excellence Redefined.</span>
+</h1>
+<p class="text-lg md:text-2xl font-light text-on-surface-variant max-w-2xl leading-relaxed mb-12">
+    High-pressure systems require elite-grade expertise. We provide heavy industrial plumbing solutions for the most demanding infrastructures in toronto canada.
+</p>
+<div class="flex flex-col sm:flex-row gap-6">
+<a class="bg-primary-container text-on-primary-fixed px-10 py-5 text-sm font-bold font-headline uppercase tracking-widest hover:bg-primary transition-all flex items-center justify-center gap-3" href="tel:Call Now">
+<span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+    Emergency: Call Now
+</a>
+<a class="border border-outline/30 text-on-surface px-10 py-5 text-sm font-bold font-headline uppercase tracking-widest hover:border-primary hover:bg-white/5 transition-all flex items-center justify-center" href="#services">
+    View Technical Specs
+</a>
+</div>
+</div>
+<!-- Large decorative background text -->
+<div class="absolute bottom-[-2%] right-[-2%] text-[25vw] font-black text-white/[0.03] select-none leading-none pointer-events-none uppercase font-headline">
+    Toronto Plumbing & Heating
+</div>
+</section>
+<!-- Services Section (Bento Grid) -->
+<section class="py-32 bg-surface-container-lowest px-8 md:px-24" id="services">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-12">
+<div class="max-w-2xl">
+<h2 class="text-5xl md:text-7xl font-bold font-headline uppercase tracking-tighter text-on-surface mb-4">Core Infrastructure</h2>
+<p class="text-primary-container font-bold font-headline text-sm uppercase tracking-[0.3em]">Technical Service Capabilities</p>
+</div>
+<div class="text-on-surface-variant text-sm font-medium uppercase tracking-widest border-l-2 border-primary-container pl-6 max-w-xs leading-loose">
+        Every deployment follows ISO standards for hydraulic integrity and structural load-bearing requirements.
+    </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+<!-- Bento Item 1 -->
+<div class="relative group md:col-span-3 bg-surface-container-high min-h-[450px] border-b-4 border-primary-container overflow-hidden">
+<img alt="Industrial Mainlines" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:scale-105 transition-transform duration-1000 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg4JDj8sF91vspB7HiyyyhdTkbGIibnA8hoEDgfmjKxRV5xulgA_FqKIwVYH2DMXqMsfByqsy87SO1mO5jf9qELJppYv0q1DX7wU8ONe9o03E-L5HGJWt0o7k5X5zhIuWko203g-mzLyPS2rF3BlFxvcShqlm-1qj9VzdcjJ-lHGv41c6-ejyosdq1u6TJb-7-TiN3JAhzjuYBcu62PB6gorVbybi4euJUwuXIegPU2yyQ7EMUaz-xcRlJ2znV_WGjl1ZGStKI0FJO"/>
+<div class="relative z-10 p-12 h-full flex flex-col justify-between">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="factory">factory</span>
+<div>
+<h3 class="text-3xl font-bold font-headline uppercase mb-6">Industrial Mainlines</h3>
+<p class="text-on-surface-variant leading-relaxed text-base font-light">Large-bore piping systems, high-capacity drainage, and specialized commercial mainline installations. We handle the heavy lifting of urban infrastructure in toronto canada.</p>
+</div>
+</div>
+</div>
+<!-- Bento Item 2 -->
+<div class="relative group md:col-span-3 bg-surface-container min-h-[450px] overflow-hidden">
+<img alt="Gas &amp; Fuel" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:scale-105 transition-transform duration-1000 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsX5zXkeJLxl5U9Wy2JIDB5-TNKl9Pq3S_uFfE30BDkIxaTpoEMz0MGGdZ8kftBRZMbTPdEM-0LqP0hd86plaoEOhdKABa3YV2ySQFU8dUZDfzorycKitOwswIZb2qlD1G4PWFl11Zu6HBKQmwAZkq6J1S2Y15UKr7qPLOv1E14BOlmjPIOc97R71mHvijNnT0p2oeyvjkkz-zgRTMGgIsJwVHxD60Obf8ov13dnn7yK1M03G38kvVLMsUPth-l20W3oNiPHHMoxtC"/>
+<div class="relative z-10 p-12 h-full flex flex-col justify-between">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="gas_meter">gas_meter</span>
+<div>
+<h3 class="text-3xl font-bold font-headline uppercase mb-6">Gas &amp; Fuel Delivery</h3>
+<p class="text-on-surface-variant leading-relaxed text-base font-light">Precision-engineered gas line installation and leak detection. Certified for high-risk industrial fuel distribution networks.</p>
+</div>
+</div>
+</div>
+<!-- Bento Item 3 -->
+<div class="md:col-span-2 bg-surface p-12 flex flex-col gap-8 min-h-[320px] border-l-2 border-primary-container relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="text-xl font-bold font-headline uppercase mb-4 group-hover:text-primary transition-colors">Backflow Prevention</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">Annual certification and mechanical failure prevention for commercial water safety systems.</p>
+</div>
+<div class="mt-auto">
+<span class="material-symbols-outlined text-3xl text-primary-container opacity-50" data-icon="security">security</span>
+</div>
+</div>
+<!-- Bento Item 4 -->
+<div class="md:col-span-2 bg-surface-container-high p-12 flex flex-col gap-8 min-h-[320px] relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="text-xl font-bold font-headline uppercase mb-4 group-hover:text-primary transition-colors">Hydro-Jetting</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">30,000 PSI high-velocity water clearing for calcified lines and industrial debris removal.</p>
+</div>
+<div class="mt-auto">
+<span class="material-symbols-outlined text-3xl text-primary-container opacity-50" data-icon="waves">waves</span>
+</div>
+</div>
+<!-- Bento Item 5 -->
+<div class="md:col-span-2 bg-surface p-12 flex flex-col gap-8 min-h-[320px] border-r-2 border-primary-container relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="text-xl font-bold font-headline uppercase mb-4 group-hover:text-primary transition-colors">Thermal Mapping</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">Non-invasive leak detection using high-sensitivity infrared thermal imaging sensors.</p>
+</div>
+<div class="mt-auto">
+<span class="material-symbols-outlined text-3xl text-primary-container opacity-50" data-icon="thermostat">thermostat</span>
+</div>
 </div>
 </div>
 </section>
-<section class="py-24 bg-surface-container-lowest px-8 md:px-24" id="services">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-<div><h2 class="text-5xl md:text-7xl font-black font-headline uppercase tracking-tighter text-on-surface">Infrastructure</h2><p class="text-primary-container font-bold uppercase tracking-widest mt-2">Technical Service Capabilities</p></div>
-<div class="text-on-surface-variant text-sm uppercase tracking-widest border-l-4 border-primary-container pl-4 max-w-xs">Industrial-grade hydraulic integrity for toronto canada.</div>
+<!-- Emergency Support -->
+<section class="relative py-40 bg-primary-container text-on-primary-fixed overflow-hidden" id="emergency">
+<div class="absolute inset-0 opacity-15 grayscale mix-blend-multiply">
+<img alt="Industrial emergency" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsN_PF7WJ2JhHPUYwvWgCwiOpKq0XPomcVZ1bGC1iEsL05zNXLpbcMP1mpnr0dlV4EfA3qRFzVEk3V7XcTvesZDNyMLAO_TPEr-eOkTG1J2XvNZhCc7WjfvFWRa2GQVTwRjShfTHekcjz8e21hBtfW4U4eZxMxnhoJ6TiBjur2G6evgm0wmWu1Lz6oNpsF8ogJbfjwrSm0XduFtjzxeuJLSCT-jt9ei8glqLTc285G5lqMVm63Q85jhR_Rtuttwok8YNtnzeJkCbB2"/>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-6 gap-2">
-<div class="relative group md:col-span-3 bg-surface-container-high min-h-[400px] border-b-8 border-primary-container overflow-hidden"><img class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700 grayscale contrast-150" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg4JDj8sF91vspB7HiyyyhdTkbGIibnA8hoEDgfmjKxRV5xulgA_FqKIwVYH2DMXqMsfByqsy87SO1mO5jf9qELJppYv0q1DX7wU8ONe9o03E-L5HGJWt0o7k5X5zhIuWko203g-mzLyPS2rF3BlFxvcShqlm-1qj9VzdcjJ-lHGv41c6-ejyosdq1u6TJb-7-TiN3JAhzjuYBcu62PB6gorVbybi4euJUwuXIegPU2yyQ7EMUaz-xcRlJ2znV_WGjl1ZGStKI0FJO"/><div class="relative z-10 p-10 h-full flex flex-col justify-between"><span class="material-symbols-outlined text-6xl text-primary">factory</span><div><h3 class="text-3xl font-black font-headline uppercase mb-4">Industrial Mainlines</h3><p class="text-on-surface-variant leading-relaxed">Large-bore piping systems and specialized mainline installations.</p></div></div></div>
-<div class="relative group md:col-span-3 bg-surface-container min-h-[400px] overflow-hidden"><img class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsX5zXkeJLxl5U9Wy2JIDB5-TNKl9Pq3S_uFfE30BDkIxaTpoEMz0MGGdZ8kftBRZMbTPdEM-0LqP0hd86plaoEOhdKABa3YV2ySQFU8dUZDfzorycKitOwswIZb2qlD1G4PWFl11Zu6HBKQmwAZkq6J1S2Y15UKr7qPLOv1E14BOlmjPIOc97R71mHvijNnT0p2oeyvjkkz-zgRTMGgIsJwVHxD60Obf8ov13dnn7yK1M03G38kvVLMsUPth-l20W3oNiPHHMoxtC"/><div class="relative z-10 p-10 h-full flex flex-col justify-between"><span class="material-symbols-outlined text-6xl text-primary">gas_meter</span><div><h3 class="text-3xl font-black font-headline uppercase mb-4">Gas &amp; Fuel</h3><p class="text-on-surface-variant leading-relaxed">Precision-engineered gas line installation and leak detection.</p></div></div></div>
-</div>
-</section>
-<section class="relative py-32 bg-primary-container text-on-primary-fixed overflow-hidden" id="emergency">
-<div class="absolute inset-0 opacity-20 industrial-grid"></div>
+<div class="absolute inset-0 opacity-10 industrial-grid"></div>
 <div class="max-w-7xl mx-auto px-8 relative z-10">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-<div><div class="inline-block bg-on-primary-fixed text-primary-container px-4 py-1 text-sm font-black uppercase tracking-[0.2em] mb-8">Status: Critical</div><h2 class="text-6xl md:text-8xl font-black font-headline uppercase leading-none tracking-tighter mb-8">System Failure Is Not An Option.</h2><div class="flex items-center gap-6"><span class="text-4xl md:text-6xl font-black font-headline tracking-tighter">Call Now</span></div></div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div>
+<div class="inline-flex items-center gap-4 bg-on-primary-fixed text-primary-container px-5 py-2 text-xs font-bold uppercase tracking-[0.3em] mb-10">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+    Status: Critical Response Active
+</div>
+<h2 class="text-6xl md:text-8xl font-black font-headline uppercase leading-[0.9] tracking-tighter mb-10">
+    System Failure Is Not An Option.
+</h2>
+<p class="text-xl md:text-2xl font-medium leading-relaxed mb-12 max-w-lg opacity-90">
+    Emergency Response Teams are on standby 24/7 in toronto canada. Average dispatch arrival within 60 minutes for critical industrial emergencies.
+</p>
+<div class="flex items-center gap-8">
+<a class="text-4xl md:text-6xl font-bold font-headline tracking-tighter hover:text-on-primary transition-colors" href="tel:Call Now">Call Now</a>
+<div class="w-16 h-16 bg-on-primary-fixed flex items-center justify-center animate-pulse">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="call" data-weight="fill">call</span>
+</div>
+</div>
+</div>
+<div class="bg-on-primary-fixed p-14 shadow-[0_40px_100px_rgba(0,0,0,0.5)] relative">
+<h3 class="text-primary text-2xl font-bold font-headline uppercase mb-10 tracking-widest relative z-10">Dispatch Manifest</h3>
+<ul class="space-y-6 relative z-10">
+<li class="flex items-center gap-6 border-b border-white/5 pb-6 group cursor-default">
+<span class="text-primary font-bold font-headline text-lg">01</span>
+<span class="text-white uppercase font-bold text-sm tracking-widest group-hover:translate-x-2 transition-transform">Rapid Leak Containment</span>
+</li>
+<li class="flex items-center gap-6 border-b border-white/5 pb-6 group cursor-default">
+<span class="text-primary font-bold font-headline text-lg">02</span>
+<span class="text-white uppercase font-bold text-sm tracking-widest group-hover:translate-x-2 transition-transform">Main Line Burst Response</span>
+</li>
+<li class="flex items-center gap-6 border-b border-white/5 pb-6 group cursor-default">
+<span class="text-primary font-bold font-headline text-lg">03</span>
+<span class="text-white uppercase font-bold text-sm tracking-widest group-hover:translate-x-2 transition-transform">Industrial Flood Mitigation</span>
+</li>
+<li class="flex items-center gap-6 group cursor-default">
+<span class="text-primary font-bold font-headline text-lg">04</span>
+<span class="text-white uppercase font-bold text-sm tracking-widest group-hover:translate-x-2 transition-transform">High-Pressure Gas Lockout</span>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </section>
-<footer class="w-full border-t-8 border-[#1c1b1b] bg-[#131313]"><div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 gap-6 text-white/60"><div class="text-xl font-black text-[#ff9800] uppercase font-headline">Toronto Plumbing & Heating</div><div class="text-xs uppercase tracking-widest">© 2024 Toronto Plumbing & Heating INDUSTRIAL. ALL RIGHTS RESERVED. Serving toronto canada.</div></div></footer>
+<!-- The Precision Process -->
+<section class="py-32 bg-surface px-8 md:px-24" id="process">
+<div class="max-w-3xl mx-auto text-center mb-24">
+<h2 class="text-5xl md:text-7xl font-bold font-headline uppercase tracking-tighter mb-6">The Precision Process</h2>
+<p class="text-on-surface-variant font-light text-lg">Four stages of technical excellence to ensure infrastructure resilience.</p>
+</div>
+<div class="relative max-w-6xl mx-auto">
+<!-- Vertical Line for Desktop -->
+<div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-white/10"></div>
+<div class="space-y-40">
+<!-- Step 1 -->
+<div class="relative flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2 md:text-right order-2 md:order-1">
+<h3 class="text-3xl font-bold font-headline uppercase text-primary mb-6">01. Diagnostics</h3>
+<p class="text-on-surface-variant text-base font-light leading-relaxed max-w-md md:ml-auto">Comprehensive sensor-driven analysis of the hydraulic environment to identify the root cause of systemic failure.</p>
+</div>
+<div class="z-10 w-12 h-12 bg-surface border border-white/20 flex items-center justify-center text-xs font-bold order-1 md:order-2">
+<div class="w-4 h-4 bg-primary-container"></div>
+</div>
+<div class="md:w-1/2 order-3">
+<img alt="Diagnostic tools" class="w-full h-64 object-cover grayscale opacity-30 border-l border-primary-container/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA70oq16Q1XY0vK-4PUZgHAfaOIwZDTOmc2IeNSSJXSqeNWo64OCjXJg7vIM_WTrXUj_QgmjWJyHC2YDWdOvYTuggkwN-PuUbl6CTpCcVeGuuuU6gELxYOnoYwxYUm726TbelPfzgDEG7GIp3MNWtau_lp3mMRIj0YUI27J9nAIHYXMhEuqeawvAfhdK-gPCBt21P_ryyIIV0Ph7MDrezGiG-2XdvRR1E0wNvFHZUrat1r33i-pASpYi7qEWgJtiBK5jdS35Gyl4O6N"/>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2 order-1">
+<img alt="Containment" class="w-full h-64 object-cover grayscale opacity-30 border-r border-primary-container/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQwz2dTwScU2yyfxGQ-L-laOZ9MEpi4eXOCFYyBJJDjvyF9ztourNCVCDsecTtuVdAH3rrNpzi9kZhe-86RezssXsayRjSZt5iFVyiXU3akLhFOWA9KCwIBAAev_rSTLF2GYMrbmQcLDqhwYAUFLghaBpROcgxQvvhY4U5b7nWl3vma9C7Lv6N2fMjaOLrYiZU80BxJQeqSGVPqIER3QvumWoP66IpKia4mL5lCaYfntmx29rJJ7-liys6gP5Sub8ngXygGDqtMuNY"/>
+</div>
+<div class="z-10 w-12 h-12 bg-primary-container flex items-center justify-center text-on-primary-fixed text-xs font-bold order-2">
+<span class="material-symbols-outlined text-lg" data-icon="lock">lock</span>
+</div>
+<div class="md:w-1/2 text-left order-3">
+<h3 class="text-3xl font-bold font-headline uppercase text-primary mb-6">02. Isolation</h3>
+<p class="text-on-surface-variant text-base font-light leading-relaxed max-w-md">Immediate containment of affected zones to prevent structural damage and preserve facility integrity during repairs.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2 md:text-right order-2 md:order-1">
+<h3 class="text-3xl font-bold font-headline uppercase text-primary mb-6">03. Execution</h3>
+<p class="text-on-surface-variant text-base font-light leading-relaxed max-w-md md:ml-auto">High-grade component replacement and precision welding using industrial-spec materials for permanent resolution.</p>
+</div>
+<div class="z-10 w-12 h-12 bg-surface border border-white/20 flex items-center justify-center text-xs font-bold order-1 md:order-2">
+<div class="w-4 h-4 bg-primary-container"></div>
+</div>
+<div class="md:w-1/2 order-3">
+<img alt="Industrial welding" class="w-full h-64 object-cover grayscale opacity-30 border-l border-primary-container/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMAxGOZPjSVByT0UcTggKpUOkZnk9M5d1T5XjcrTL9OA332HazgYkG6JUwJRdOio-NSPu_6xrqIiSt0EuYrCjgdfSVHGCmA9xk2IhPGb4pNnAs4wbTr49Cxqmazey63JKbV936ddobOwtsf9q_eE9uNVViLUyeOaOA6nv2Pneg7srFxJ7Cf1TkUG6edrsrzy0VZ2Ar-lml4IShLf4ri6RpJUb3CRh33voOegZNZUxA-GqYvqu1HD7X1BAEFK367Is6W1LJh8DGsD4a"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 bg-surface-container-low px-8 md:px-24" id="contact">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+<div>
+<h2 class="text-5xl md:text-[5rem] font-bold font-headline uppercase tracking-tighter mb-10 text-on-surface">Secure Dispatch</h2>
+<p class="text-xl text-on-surface-variant font-light mb-16 leading-relaxed">Provide technical parameters below for a service quotation or urgent dispatch request in toronto canada.</p>
+<div class="space-y-12">
+<div class="flex items-start gap-8">
+<div class="bg-surface-container-highest p-5 border border-white/5">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase font-headline tracking-widest text-primary-container mb-2">Operations Command</h4>
+<p class="text-on-surface-variant text-base leading-loose">toronto canada Operations Center<br/>Primary Infrastructure Zone</p>
+</div>
+</div>
+<div class="flex items-start gap-8">
+<div class="bg-surface-container-highest p-5 border border-white/5">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="engineering">engineering</span>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase font-headline tracking-widest text-primary-container mb-2">Lead Specialist</h4>
+<p class="text-on-surface-variant text-base leading-loose">Toronto Plumbing & Heating Dispatch Team</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface p-12 border border-white/5 shadow-2xl">
+<form action="#" class="space-y-8">
+<div class="group">
+<label class="block text-xs uppercase font-bold tracking-[0.2em] text-on-surface-variant mb-3 group-focus-within:text-primary transition-colors">Subject Name / Entity</label>
+<input class="w-full bg-surface-container-high border-0 border-b border-white/20 focus:border-primary focus:ring-0 text-on-surface placeholder:text-white/10 py-4 font-headline text-sm uppercase tracking-widest transition-all" placeholder="Company or Individual Name" type="text"/>
+</div>
+<div class="group">
+<label class="block text-xs uppercase font-bold tracking-[0.2em] text-on-surface-variant mb-3 group-focus-within:text-primary transition-colors">Technical Specs / Issue</label>
+<textarea class="w-full bg-surface-container-high border-0 border-b border-white/20 focus:border-primary focus:ring-0 text-on-surface placeholder:text-white/10 py-4 font-headline text-sm uppercase tracking-widest transition-all" placeholder="Describe the system failure" rows="4"></textarea>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group">
+<label class="block text-xs uppercase font-bold tracking-[0.2em] text-on-surface-variant mb-3 group-focus-within:text-primary transition-colors">Contact Link</label>
+<input class="w-full bg-surface-container-high border-0 border-b border-white/20 focus:border-primary focus:ring-0 text-on-surface placeholder:text-white/10 py-4 font-headline text-sm uppercase tracking-widest transition-all" placeholder="Email Address" type="email"/>
+</div>
+<div class="group">
+<label class="block text-xs uppercase font-bold tracking-[0.2em] text-on-surface-variant mb-3 group-focus-within:text-primary transition-colors">Operational Priority</label>
+<select class="w-full bg-surface-container-high border-0 border-b border-white/20 focus:border-primary focus:ring-0 text-on-surface py-4 font-headline text-sm uppercase tracking-widest transition-all appearance-none cursor-pointer">
+<option>Routine Maintenance</option>
+<option>System Degradation</option>
+<option>Critical Failure</option>
+<option>Emergency Dispatch</option>
+</select>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary-fixed py-6 text-sm font-bold font-headline uppercase tracking-[0.3em] hover:bg-primary transition-all flex items-center justify-center gap-4 group" type="submit">
+    Initialize Request
+    <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</section>
 </main>
+<!-- Footer -->
+<footer class="w-full border-t border-white/5 bg-[#0e0e0e]">
+<div class="max-w-[1440px] mx-auto px-8 py-16">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<div class="w-6 h-6 bg-primary-container"></div>
+<div class="text-lg font-bold text-white font-headline uppercase tracking-tight">Toronto Plumbing & Heating</div>
+</div>
+<div class="font-body text-[10px] uppercase tracking-[0.3em] text-white/40">
+            © 2024 Toronto Plumbing & Heating Industrial | toronto canada. 
+        </div>
+</div>
+<div class="flex flex-wrap gap-x-12 gap-y-4">
+<a class="text-[10px] uppercase tracking-[0.2em] text-white/50 hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="text-[10px] uppercase tracking-[0.2em] text-white/50 hover:text-primary transition-colors" href="#">Terms</a>
+<a class="text-[10px] uppercase tracking-[0.2em] text-white/50 hover:text-primary transition-colors" href="#">Safety</a>
+<a class="text-[10px] uppercase tracking-[0.2em] text-white/50 hover:text-primary transition-colors" href="#">Certifications</a>
+</div>
+<div class="flex items-center gap-4 bg-white/5 px-4 py-2 border border-white/10">
+<div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-white/70">Secure Node Online</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- FAB (Emergency Only) -->
+<a class="fixed bottom-10 right-10 bg-error-container text-white p-5 shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:bg-error transition-all group z-50 flex items-center gap-4 border border-white/10" href="tel:Call Now">
+<span class="material-symbols-outlined text-2xl" data-icon="emergency" data-weight="fill">emergency</span>
+<span class="font-bold font-headline uppercase tracking-widest text-xs hidden group-hover:block whitespace-nowrap">Call Dispatch</span>
+</a>
 </body></html>
