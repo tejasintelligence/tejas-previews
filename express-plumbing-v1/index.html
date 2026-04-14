@@ -18,27 +18,12 @@
                         "on-primary-container": "#98bdff",
                         "secondary": "#00346c",
                         "on-secondary": "#ffffff",
-                        "secondary-container": "#004b95",
-                        "on-secondary-container": "#ffffff",
                         "background": "#f3faff",
-                        "on-background": "#071e27",
                         "surface": "#f3faff",
                         "on-surface": "#071e27",
-                        "surface-variant": "#cfe6f2",
                         "on-surface-variant": "#434652",
                         "outline": "#737783",
-                        "outline-variant": "#c3c6d4",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-container-low": "#e6f6ff",
-                        "surface-container": "#dbf1fe",
-                        "surface-container-high": "#d5ecf8",
-                        "surface-container-highest": "#cfe6f2"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
+                        "surface-container": "#dbf1fe"
                     },
                     "fontFamily": { "headline": ["Manrope"], "body": ["Inter"] }
                 },
@@ -46,26 +31,19 @@
         }
     </script>
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-primary/20">
+<body class="bg-background text-on-surface font-body">
 <nav class="fixed top-0 w-full z-50 bg-[#f3faff]/90 backdrop-blur-md shadow-lg border-b border-primary/10">
 <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
 <div class="text-2xl font-extrabold text-[#00346c] tracking-tighter">Express Plumbing</div>
-<div class="hidden md:flex items-center space-x-8 font-bold text-primary">
-<a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a>
-</div>
-<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold text-sm shadow-md" href="tel:(737) 345-9535">(737) 345-9535</a>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold text-sm" href="tel:(737) 345-9535">(737) 345-9535</a>
 </div>
 </nav>
 <section class="relative pt-48 pb-32 px-8" id="home">
 <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 <div class="space-y-8">
-<div class="inline-flex items-center px-4 py-2 rounded-full bg-primary/5 text-primary font-bold text-sm">
-<span class="material-symbols-outlined mr-2 text-lg">verified</span>
-                    Available in Austin, TX
-                </div>
 <h1 class="text-7xl font-extrabold text-primary leading-tight tracking-tighter">Express Plumbing</h1>
 <p class="text-2xl text-on-surface-variant max-w-lg leading-relaxed">Austin's Trusted 24/7 Plumbing Emergency Service</p>
-<button class="bg-primary text-on-primary px-10 py-5 rounded-2xl font-bold text-lg shadow-xl">Get Started</button>
+<button class="bg-primary text-on-primary px-10 py-5 rounded-2xl font-bold text-lg shadow-xl">Get Started Now</button>
 </div>
 <div class="aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
 <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp2mMQvbp_2fXXmGu2Hb-RqFfAJFkUN67DOiIJ7sySqTYd_WJkhbjEiIRZn6G9_kt43k4EUFMugGxKI1xFipOigIYmcCCUmfn-WZpfLNhV4rld10y12d4Bq8ugOp2IPRICJcWyrKs1HLngaN0vXLlwI4nxOuFB0o-_9tciHc_JLwcBoMjOdW4wjmeeK_twr2i4x2ng25vAHSUhmI1AMdCHR5k0a1bClEKq4tYCEkYymnYCXfKpDeob9FknxPvzwf_GzB6W0GhlfVxK"/>
@@ -74,7 +52,7 @@
 </section>
 <footer class="w-full bg-[#dbf1fe] py-20 px-12 text-[#00346c]">
 <div class="flex justify-between items-center max-w-7xl mx-auto">
-<div class="font-black text-2xl uppercase tracking-tighter">Express Plumbing</div>
+<div class="font-black text-2xl">Express Plumbing</div>
 <a class="bg-[#00346c] text-white px-8 py-4 rounded-xl font-bold" href="tel:(737) 345-9535">(737) 345-9535</a>
 </div>
 </footer>
