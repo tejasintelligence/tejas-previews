@@ -13,50 +13,14 @@
           extend: {
             "colors": {
                     "surface-container-lowest": "#ffffff",
-                    "secondary-fixed-dim": "#ffb870",
                     "on-surface": "#191c1e",
-                    "on-primary-fixed-variant": "#001c3b",
-                    "on-secondary-container": "#2c1600",
-                    "on-primary-fixed": "#001c3b",
-                    "on-surface-variant": "#41474d",
                     "background": "#f0f4f8",
-                    "on-secondary-fixed": "#2c1600",
-                    "on-tertiary-fixed-variant": "#251a00",
-                    "on-tertiary-container": "#251a00",
-                    "primary-container": "#d6e3ff",
-                    "on-background": "#191c1e",
-                    "on-tertiary": "#ffffff",
-                    "surface-variant": "#dee3eb",
-                    "outline": "#71777d",
-                    "outline-variant": "#c1c7ce",
-                    "on-primary-container": "#001c3b",
-                    "on-primary": "#ffffff",
-                    "surface-container-high": "#e1e2e5",
-                    "surface-container-highest": "#e1e2e5",
-                    "on-error-container": "#410002",
-                    "secondary-fixed": "#ffdcbe",
-                    "tertiary-fixed": "#ffdf99",
-                    "error-container": "#ffdad6",
-                    "on-tertiary-fixed": "#251a00",
-                    "on-surface-bright": "#191c1e",
                     "primary": "#002b5c",
-                    "secondary": "#8b5024",
-                    "tertiary": "#775a00",
-                    "surface-container": "#eeeef1",
-                    "surface-bright": "#f8f9fc",
-                    "surface-dim": "#d8dadd",
-                    "primary-fixed": "#d6e3ff",
+                    "on-primary": "#ffffff",
+                    "secondary": "#002b5c",
                     "on-secondary": "#ffffff",
-                    "on-error": "#ffffff",
-                    "secondary-container": "#ff9800",
-                    "error": "#ba1a1a",
-                    "primary-fixed-dim": "#a9c7ff",
-                    "surface-container-low": "#f1f1f4",
-                    "tertiary-container": "#ffdf99",
-                    "tertiary-fixed-dim": "#e9c16c"
-            },
-            "borderRadius": {
-              "full": "9999px"
+                    "outline": "#71777d",
+                    "surface-container": "#eeeef1"
             },
             "fontFamily": {
               "headline": ["Manrope"],
@@ -66,50 +30,32 @@
         }
       }
     </script>
-<style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      }
-    </style>
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-secondary-container">
-<!-- Header -->
-<header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur shadow-sm">
-<div class="max-w-7xl mx-auto px-8 h-24 flex items-center justify-between">
-<div class="text-3xl font-black text-primary tracking-tighter">Austin Plumbing Experts</div>
-<nav class="hidden md:flex gap-12 text-sm font-bold text-on-surface-variant">
+<body class="bg-background text-on-surface font-body">
+<header class="fixed top-0 w-full z-50 bg-white shadow-sm h-24 flex items-center px-8 justify-between">
+<div class="text-3xl font-black text-primary">Austin Plumbing Experts</div>
+<nav class="hidden md:flex gap-12 font-bold transition-all">
 <a class="text-primary" href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
+<a class="text-on-surface-variant hover:text-primary" href="#about">About</a>
 <a class="bg-primary text-white px-8 py-3 rounded-full" href="tel:(512) 938-5056">(512) 938-5056</a>
 </nav>
-</div>
 </header>
-<!-- Hero -->
 <section class="pt-48 pb-32 px-8" id="home">
 <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
 <div class="space-y-10">
-<h1 class="text-7xl font-headline font-black text-primary leading-[1.05]">Austin Plumbing Experts</h1>
+<h1 class="text-7xl font-black text-primary">Austin Plumbing Experts</h1>
 <p class="text-2xl text-on-surface-variant leading-relaxed">Austin's Reliable 24/7 Plumbing Experts.</p>
-<div class="flex gap-6">
 <button class="bg-primary text-white px-10 py-5 rounded-2xl font-black shadow-2xl">Get a Quote</button>
-<button class="bg-white border-2 border-outline-variant px-10 py-5 rounded-2xl font-black">Learn More</button>
 </div>
+<div class="aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp2mMQvbp_2fXXmGu2Hb-RqFfAJFkUN67DOiIJ7sySqTYd_WJkhbjEiIRZn6G9_kt43k4EUFMugGxKI1xFipOigIYmcCCUmfn-WZpfLNhV4rld10y12d4Bq8ugOp2IPRICJcWyrKs1HLngaN0vXLlwI4nxOuFB0o-_9tciHc_JLwcBoMjOdW4wjmeeK_twr2i4x2ng25vAHSUhmI1AMdCHR5k0a1bClEKq4tYCEkYymnYCXfKpDeob9FknxPvzwf_GzB6W0GhlfVxK"/>
 </div>
 </div>
 </section>
-<!-- About -->
-<section class="py-32 bg-white px-8" id="about">
-<div class="max-w-7xl mx-auto">
-<h2 class="text-5xl font-headline font-black text-primary mb-10">Absolute Integrity.</h2>
-<p class="text-xl text-on-surface-variant max-w-3xl leading-relaxed">When plumbing emergencies strike, Austin Plumbing Experts delivers immediate, professional service around the clock. Our highly-rated team provides everything from routine maintenance to complex repairs with exceptional workmanship. We are committed to solving your plumbing issues quickly and transparently, so you can get back to your life without interruption.</p>
-</div>
-</section>
-<footer class="bg-[#001c3b] text-white py-24 px-8">
+<footer class="bg-primary text-white py-24 px-8 text-center md:text-left">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-16">
 <div class="text-4xl font-black tracking-tighter">Austin Plumbing Experts</div>
-<div class="text-lg font-medium opacity-60">Located in Austin, TX</div>
-<a class="bg-secondary-container text-white px-10 py-5 rounded-2xl font-black" href="tel:(512) 938-5056">(512) 938-5056</a>
+<a class="bg-white text-primary px-10 py-5 rounded-2xl font-black" href="tel:(512) 938-5056">(512) 938-5056</a>
 </div>
 </footer>
 </body></html>
